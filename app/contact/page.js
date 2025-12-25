@@ -20,7 +20,7 @@ export default function ContactPage() {
 
             <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
                 <form
-                    className="space-y-5 rounded-2xl border border-slate-200 bg-white p-7"
+                    className="space-y-5 rounded-2xl border border-slate-200 bg-white/80 p-7 shadow-sm"
                     action="#"
                     method="post"
                 >
@@ -104,20 +104,20 @@ export default function ContactPage() {
                         />
                     </div>
 
-                    <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+                    <div className="rounded-xl border border-sky-200/70 bg-sky-50 p-4 text-sm text-sky-900">
                         This form is UI-only (no backend configured). If you’d like, we can
                         connect it to email delivery or a CRM in the next step.
                     </div>
 
                     <button
                         type="submit"
-                        className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-slate-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                        className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                     >
                         Send Inquiry
                     </button>
                 </form>
 
-                <aside className="space-y-5 rounded-2xl border border-slate-200 bg-white p-7">
+                <aside className="space-y-5 rounded-2xl border border-slate-200 bg-white/80 p-7 shadow-sm">
                     <div className="space-y-2">
                         <div className="text-sm font-semibold text-slate-900">
                             Faster B2B response

@@ -4,101 +4,107 @@ import Carousel from "../components/Carousel";
 export default function Home() {
   return (
     <div className="space-y-14">
-      <section className="grid items-center gap-10 lg:grid-cols-2">
-        <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">
-            Export-ready sourcing • Amazon-first B2C • B2B partnerships
-          </div>
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/70 p-6 shadow-sm sm:p-8">
+        <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-emerald-200/40 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-28 -left-24 h-64 w-64 rounded-full bg-sky-200/35 blur-3xl" />
+        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-2">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200/70 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800">
+              Export-ready sourcing • Amazon-first B2C • B2B partnerships
+            </div>
 
-          <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-            Bysha Internationals
-          </h1>
+            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+              <span className="bg-gradient-to-r from-slate-900 via-emerald-700 to-sky-700 bg-clip-text text-transparent">
+                Bysha Internationals
+              </span>
+            </h1>
 
-          <p className="text-lg leading-8 text-slate-600">
-            Global Trade. Quality Products. Trusted Partnerships.
-          </p>
+            <p className="text-lg leading-8 text-slate-600">
+              Global Trade. Quality Products. Trusted Partnerships.
+            </p>
 
-          <p className="leading-7 text-slate-600">
-            We help customers discover reliable products through Amazon
-            marketplaces worldwide, while supporting wholesalers and importers
-            with export-focused bulk supply for select categories.
-          </p>
+            <p className="leading-7 text-slate-600">
+              We help customers discover reliable products through Amazon
+              marketplaces worldwide, while supporting wholesalers and importers
+              with export-focused bulk supply for select categories.
+            </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href="https://www.amazon.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-11 items-center justify-center rounded-lg bg-slate-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
-            >
-              View Products on Amazon
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50"
-            >
-              B2B Inquiries
-            </Link>
-          </div>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://www.amazon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
+              >
+                View Products on Amazon
+              </a>
+              <Link
+                href="/contact"
+                className="inline-flex h-11 items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
+              >
+                B2B Inquiries
+              </Link>
+            </div>
 
-          <div className="grid gap-4 sm:grid-cols-3">
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <div className="text-sm font-semibold text-slate-900">
-                Global presence
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-xl border border-emerald-200/60 bg-emerald-50/60 p-4">
+                <div className="text-sm font-semibold text-slate-900">
+                  Global presence
+                </div>
+                <div className="mt-1 text-sm text-slate-600">
+                  Marketplace-ready operations and export documentation support.
+                </div>
               </div>
-              <div className="mt-1 text-sm text-slate-600">
-                Marketplace-ready operations and export documentation support.
+              <div className="rounded-xl border border-sky-200/60 bg-sky-50/60 p-4">
+                <div className="text-sm font-semibold text-slate-900">
+                  Amazon marketplaces
+                </div>
+                <div className="mt-1 text-sm text-slate-600">
+                  B2C purchases are fulfilled via Amazon for speed and trust.
+                </div>
+              </div>
+              <div className="rounded-xl border border-indigo-200/60 bg-indigo-50/60 p-4">
+                <div className="text-sm font-semibold text-slate-900">
+                  B2B partnerships
+                </div>
+                <div className="mt-1 text-sm text-slate-600">
+                  Bulk supply, sourcing, and long-term distribution.
+                </div>
               </div>
             </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <div className="text-sm font-semibold text-slate-900">
-                Amazon marketplaces
-              </div>
-              <div className="mt-1 text-sm text-slate-600">
-                B2C purchases are fulfilled via Amazon for speed and trust.
-              </div>
-            </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <div className="text-sm font-semibold text-slate-900">
-                B2B partnerships
-              </div>
-              <div className="mt-1 text-sm text-slate-600">
-                Bulk supply, sourcing, and long-term distribution.
-              </div>
-            </div>
           </div>
-        </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-4">
-          <Carousel
-            slides={[
-              {
-                eyebrow: "Featured",
-                title: "Amazon-ready products",
-                subtitle:
-                  "Professional catalog presentation and customer-first quality standards.",
-                imageSrc: "/placeholder-product.svg",
-              },
-              {
-                eyebrow: "Reach",
-                title: "Worldwide marketplaces",
-                subtitle:
-                  "Built for international buyers, reviews, and reliable fulfillment.",
-                imageSrc: "/placeholder-export.svg",
-              },
-              {
-                eyebrow: "Sourcing",
-                title: "Quality, compliance, consistency",
-                subtitle:
-                  "Supplier vetting, packaging control, and export-focused documentation.",
-                imageSrc: "/placeholder-sourcing.svg",
-              },
-            ]}
-          />
+          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+            <Carousel
+              slides={[
+                {
+                  eyebrow: "Featured",
+                  title: "Amazon-ready products",
+                  subtitle:
+                    "Professional catalog presentation and customer-first quality standards.",
+                  imageSrc: "/placeholder-product.svg",
+                },
+                {
+                  eyebrow: "Reach",
+                  title: "Worldwide marketplaces",
+                  subtitle:
+                    "Built for international buyers, reviews, and reliable fulfillment.",
+                  imageSrc: "/placeholder-export.svg",
+                },
+                {
+                  eyebrow: "Sourcing",
+                  title: "Quality, compliance, consistency",
+                  subtitle:
+                    "Supplier vetting, packaging control, and export-focused documentation.",
+                  imageSrc: "/placeholder-sourcing.svg",
+                },
+              ]}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="grid gap-8 rounded-2xl border border-slate-200 bg-white p-8 lg:grid-cols-3">
+      <section className="grid gap-8 rounded-2xl border border-slate-200 bg-white/80 p-8 shadow-sm lg:grid-cols-3">
         <div className="space-y-2 lg:col-span-1">
           <h2 className="text-xl font-semibold tracking-tight text-slate-900">
             About Bysha Internationals

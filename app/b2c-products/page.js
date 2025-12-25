@@ -19,7 +19,7 @@ export default function B2CProductsPage() {
                     convenience and reliable fulfillment, all B2C purchases are completed
                     via Amazon.
                 </p>
-                <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+                <div className="rounded-xl border border-emerald-200/70 bg-emerald-50 p-4 text-sm text-emerald-900">
                     <span className="font-semibold">Note:</span> This website does not
                     process payments. “Buy on Amazon” links open the Amazon marketplace
                     for checkout and fulfillment.
@@ -38,7 +38,7 @@ export default function B2CProductsPage() {
                 ))}
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-7">
+            <section className="rounded-2xl border border-slate-200 bg-white/80 p-7 shadow-sm">
                 <div className="grid gap-6 md:grid-cols-2 md:items-center">
                     <div className="space-y-2">
                         <h2 className="text-xl font-semibold tracking-tight text-slate-900">
@@ -54,13 +54,13 @@ export default function B2CProductsPage() {
                             href="https://www.amazon.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex h-11 items-center justify-center rounded-lg bg-slate-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                            className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                         >
                             Visit Amazon Storefront
                         </a>
                         <a
                             href="/contact"
-                            className="inline-flex h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50"
+                            className="inline-flex h-11 items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
                         >
                             Contact for B2B
                         </a>

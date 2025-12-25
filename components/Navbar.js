@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
     { href: "/b2c-products", label: "B2C Products" },
@@ -9,11 +10,18 @@ const navLinks = [
 
 export default function Navbar() {
     return (
-        <header className="border-b border-slate-200 bg-white">
+        <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60">
             <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
                 <Link href="/" className="flex items-center gap-2">
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-sm font-semibold text-white">
-                        BI
+                    <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-emerald-200/70">
+                        <Image
+                            src="/logo.jpeg"
+                            alt="Bysha Internationals logo"
+                            fill
+                            sizes="36px"
+                            className="object-contain p-1"
+                            priority
+                        />
                     </span>
                     <div className="leading-tight">
                         <div className="text-sm font-semibold text-slate-900">
@@ -30,7 +38,7 @@ export default function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-slate-700 transition-colors hover:text-slate-900"
+                            className="rounded-md px-2 py-1 text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900"
                         >
                             {link.label}
                         </Link>
@@ -39,7 +47,7 @@ export default function Navbar() {
                         href="https://www.amazon.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex h-9 items-center justify-center rounded-lg bg-slate-900 px-4 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                        className="inline-flex h-9 items-center justify-center rounded-lg bg-gradient-to-r from-slate-900 to-emerald-800 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:from-slate-900 hover:to-emerald-700"
                     >
                         Amazon
                     </a>

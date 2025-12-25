@@ -22,7 +22,7 @@ export default function B2BProductsPage() {
                 </p>
             </header>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-8">
+            <section className="rounded-2xl border border-slate-200 bg-white/80 p-8 shadow-sm">
                 <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
                     <div className="space-y-4">
                         <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
@@ -63,20 +63,20 @@ export default function B2BProductsPage() {
                         <div className="flex flex-col gap-3 sm:flex-row">
                             <Link
                                 href="/contact"
-                                className="inline-flex h-11 items-center justify-center rounded-lg bg-slate-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                                className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                             >
                                 Contact for Bulk Orders
                             </Link>
                             <Link
                                 href="/about"
-                                className="inline-flex h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50"
+                                className="inline-flex h-11 items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
                             >
                                 Our Quality Approach
                             </Link>
                         </div>
                     </div>
 
-                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-emerald-50 p-4">
                         <div className="relative aspect-[4/3] w-full">
                             <Image
                                 src="/placeholder-product.svg"
@@ -89,9 +89,9 @@ export default function B2BProductsPage() {
                 </div>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-8">
+            <section className="rounded-2xl border border-slate-200 bg-white/80 p-8 shadow-sm">
                 <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-sky-50 p-4">
                         <div className="relative aspect-[4/3] w-full">
                             <Image
                                 src="/placeholder-product.svg"
@@ -142,13 +142,13 @@ export default function B2BProductsPage() {
                         <div className="flex flex-col gap-3 sm:flex-row">
                             <Link
                                 href="/contact"
-                                className="inline-flex h-11 items-center justify-center rounded-lg bg-slate-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                                className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                             >
                                 Contact for Bulk Orders
                             </Link>
                             <Link
                                 href="/b2c-products"
-                                className="inline-flex h-11 items-center justify-center rounded-lg border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50"
+                                className="inline-flex h-11 items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
                             >
                                 View B2C Catalog
                             </Link>
@@ -157,7 +157,7 @@ export default function B2BProductsPage() {
                 </div>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+            <section className="rounded-2xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-slate-50 to-sky-50 p-8 shadow-sm">
                 <div className="grid gap-6 md:grid-cols-2 md:items-center">
                     <div className="space-y-2">
                         <h3 className="text-xl font-semibold tracking-tight text-slate-900">
@@ -171,7 +171,7 @@ export default function B2BProductsPage() {
                     <div className="md:justify-self-end">
                         <Link
                             href="/contact"
-                            className="inline-flex h-11 items-center justify-center rounded-lg bg-emerald-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+                            className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                         >
                             Start a B2B Inquiry
                         </Link>

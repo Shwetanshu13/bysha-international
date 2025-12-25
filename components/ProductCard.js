@@ -7,8 +7,9 @@ export default function ProductCard({
     amazonHref,
 }) {
     return (
-        <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <div className="border-b border-slate-200 bg-slate-50 p-4">
+        <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md">
+            <div className="h-1 w-full bg-gradient-to-r from-emerald-500 via-sky-500 to-indigo-500" />
+            <div className="border-b border-slate-200 bg-gradient-to-br from-slate-50 to-emerald-50 p-4">
                 <div className="relative aspect-[4/3] w-full">
                     <Image
                         src={imageSrc}
@@ -28,7 +29,7 @@ export default function ProductCard({
                     href={amazonHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex h-10 w-full items-center justify-center rounded-lg bg-slate-900 px-4 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                    className="inline-flex h-10 w-full items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                 >
                     Buy on Amazon
                 </a>

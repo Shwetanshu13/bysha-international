@@ -26,9 +26,15 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
 
     if (safeSlides.length === 0) return null;
 
+    const accentByIndex = [
+        "text-emerald-700",
+        "text-sky-700",
+        "text-indigo-700",
+    ];
+
     return (
         <div
-            className="relative overflow-hidden rounded-xl"
+            className="relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50"
             aria-roledescription="carousel"
             aria-label="Featured highlights"
         >
@@ -44,7 +50,10 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
                     >
                         <div className="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center">
                             <div className="space-y-3">
-                                <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                                <div
+                                    className={`text-xs font-semibold uppercase tracking-wide ${accentByIndex[idx % accentByIndex.length]
+                                        }`}
+                                >
                                     {slide.eyebrow}
                                 </div>
                                 <div className="text-2xl font-semibold tracking-tight text-slate-900">
@@ -53,7 +62,7 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
                                 <p className="text-sm leading-6 text-slate-600">{slide.subtitle}</p>
                             </div>
 
-                            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <div className="rounded-xl border border-slate-200 bg-white/70 p-4">
                                 <div className="relative aspect-[4/3] w-full">
                                     <Image
                                         src={slide.imageSrc}

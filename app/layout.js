@@ -33,14 +33,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-slate-50 via-white to-emerald-50 text-slate-900`}
       >
-        <div className="min-h-dvh">
-          <Navbar />
-          <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-            {children}
-          </main>
-          <Footer />
+        <div className="relative min-h-dvh overflow-hidden">
+          <div className="pointer-events-none absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-emerald-200/40 blur-3xl" />
+          <div className="pointer-events-none absolute top-40 -left-28 h-80 w-80 rounded-full bg-sky-200/35 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-indigo-200/30 blur-3xl" />
+
+          <div className="relative z-10">
+            <Navbar />
+            <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+              {children}
+            </main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

@@ -20,7 +20,7 @@ export default function AboutPage() {
                 </p>
             </header>
 
-            <section className="grid gap-6 rounded-2xl border border-slate-200 bg-white p-8 lg:grid-cols-3">
+            <section className="grid gap-6 rounded-2xl border border-slate-200 bg-white/80 p-8 shadow-sm lg:grid-cols-3">
                 <div className="space-y-2">
                     <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
                         Mission
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </section>
 
             <section className="grid gap-6 lg:grid-cols-3">
-                <div className="rounded-2xl border border-slate-200 bg-white p-7">
+                <div className="rounded-2xl border border-emerald-200/60 bg-emerald-50/40 p-7 shadow-sm">
                     <div className="text-sm font-semibold text-slate-900">
                         Quality control
                     </div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                         cycles.
                     </p>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-7">
+                <div className="rounded-2xl border border-sky-200/60 bg-sky-50/40 p-7 shadow-sm">
                     <div className="text-sm font-semibold text-slate-900">
                         Global trade readiness
                     </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
                         labeling clarity to export-focused documentation support.
                     </p>
                 </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-7">
+                <div className="rounded-2xl border border-indigo-200/60 bg-indigo-50/40 p-7 shadow-sm">
                     <div className="text-sm font-semibold text-slate-900">
                         Long-term partnerships
                     </div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+            <section className="rounded-2xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-slate-50 to-sky-50 p-8 shadow-sm">
                 <div className="grid gap-6 md:grid-cols-2 md:items-center">
                     <div className="space-y-2">
                         <h3 className="text-xl font-semibold tracking-tight text-slate-900">
