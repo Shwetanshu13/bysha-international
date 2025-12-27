@@ -26,7 +26,7 @@ export default function B2CProductsPage() {
                 </div>
             </header>
 
-            <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <section className="grid auto-rows-fr gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
                 {b2cProducts.map((product) => (
                     <ProductCard
                         key={product.id}

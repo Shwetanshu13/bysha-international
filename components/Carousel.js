@@ -68,6 +68,7 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
                                         src={slide.imageSrc}
                                         alt={slide.title}
                                         fill
+                                        sizes="(min-width: 640px) 40vw, 100vw"
                                         className="object-contain"
                                         priority={idx === 0}
                                     />

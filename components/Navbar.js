@@ -11,7 +11,7 @@ const navLinks = [
 export default function Navbar() {
     return (
         <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-            <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-6 lg:px-8">
                 <Link href="/" className="flex items-center gap-2">
                     <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-emerald-200/70">
                         <Image
@@ -33,12 +33,12 @@ export default function Navbar() {
                     </div>
                 </Link>
 
-                <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium">
+                <nav className="flex w-full items-center gap-3 overflow-x-auto whitespace-nowrap text-sm font-medium sm:w-auto sm:overflow-visible">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="rounded-md px-2 py-1 text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900"
+                            className="shrink-0 rounded-md px-2 py-1 text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900"
                         >
                             {link.label}
                         </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
                         href="https://www.amazon.in/s?k=Bysha"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex h-9 items-center justify-center rounded-lg bg-gradient-to-r from-slate-900 to-emerald-800 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:from-slate-900 hover:to-emerald-700"
+                        className="shrink-0 inline-flex h-9 items-center justify-center rounded-lg bg-gradient-to-r from-slate-900 to-emerald-800 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:from-slate-900 hover:to-emerald-700"
                     >
                         Amazon
                     </a>
