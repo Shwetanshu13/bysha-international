@@ -31,7 +31,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://www.amazon.com"
+                href="https://www.amazon.in/s?k=Bysha"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
@@ -82,21 +82,21 @@ export default function Home() {
                   title: "Amazon-ready products",
                   subtitle:
                     "Professional catalog presentation and customer-first quality standards.",
-                  imageSrc: "/placeholder-product.svg",
+                  imageSrc: "https://m.media-amazon.com/images/I/8129M0CGLpL._SX679_.jpg",
                 },
                 {
                   eyebrow: "Reach",
                   title: "Worldwide marketplaces",
                   subtitle:
                     "Built for international buyers, reviews, and reliable fulfillment.",
-                  imageSrc: "/placeholder-export.svg",
+                  imageSrc: "/imgs/worldwide.jpg",
                 },
                 {
                   eyebrow: "Sourcing",
                   title: "Quality, compliance, consistency",
                   subtitle:
                     "Supplier vetting, packaging control, and export-focused documentation.",
-                  imageSrc: "/placeholder-sourcing.svg",
+                  imageSrc: "/imgs/premium-makhana.webp",
                 },
               ]}
             />

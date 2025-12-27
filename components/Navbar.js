@@ -44,7 +44,7 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <a
-                        href="https://www.amazon.com"
+                        href="https://www.amazon.in/s?k=Bysha"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex h-9 items-center justify-center rounded-lg bg-gradient-to-r from-slate-900 to-emerald-800 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:from-slate-900 hover:to-emerald-700"

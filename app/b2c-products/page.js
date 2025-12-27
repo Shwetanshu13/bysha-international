@@ -27,7 +27,7 @@ export default function B2CProductsPage() {
             </header>
 
             <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {b2cProducts.slice(0, 16).map((product) => (
+                {b2cProducts.map((product) => (
                     <ProductCard
                         key={product.id}
                         imageSrc={product.imageSrc}
@@ -51,7 +51,7 @@ export default function B2CProductsPage() {
                     </div>
                     <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
                         <a
-                            href="https://www.amazon.com"
+                            href="https://www.amazon.in/s?k=Bysha"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"

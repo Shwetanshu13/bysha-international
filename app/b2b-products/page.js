@@ -79,7 +79,7 @@ export default function B2BProductsPage() {
                     <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-emerald-50 p-4">
                         <div className="relative aspect-[4/3] w-full">
                             <Image
-                                src="/placeholder-product.svg"
+                                src="/imgs/premium-makhana.webp"
                                 alt="Foxnuts bulk supply"
                                 fill
                                 className="object-contain"
@@ -94,7 +94,7 @@ export default function B2BProductsPage() {
                     <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-sky-50 p-4">
                         <div className="relative aspect-[4/3] w-full">
                             <Image
-                                src="/placeholder-product.svg"
+                                src="/imgs/leather_bag.jpeg"
                                 alt="Hand-crafted leather bags"
                                 fill
                                 className="object-contain"
