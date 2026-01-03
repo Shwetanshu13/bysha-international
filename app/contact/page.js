@@ -14,12 +14,18 @@ export default function ContactPage() {
                 <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
                     Contact Us
                 </h1>
+                <p className="max-w-3xl text-sm leading-6 text-slate-600">
+                    Reach out to us anytime — we’ll get back to you as soon as possible.
+                </p>
             </header>
 
             <section className="rounded-2xl border border-slate-200 bg-white/80 p-7 shadow-sm">
                 <div className="space-y-4">
                     <div className="space-y-2">
                         <div className="text-sm font-semibold text-slate-900">Email</div>
+                        <p className="text-sm leading-6 text-slate-600">
+                            Contact us at:
+                        </p>
                         <div className="space-y-1 text-sm text-slate-600">
                             <a
                                 className="font-medium text-emerald-700 hover:underline"
