@@ -9,7 +9,7 @@ export default function Home() {
         <div className="pointer-events-none absolute -bottom-28 -left-24 h-64 w-64 rounded-full bg-sky-200/35 blur-3xl" />
         <div className="relative z-10 grid items-center gap-10 lg:grid-cols-2">
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200/70 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800">
+            <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-emerald-200/70 bg-emerald-50 px-3 py-1 text-xs font-medium leading-5 text-emerald-800 whitespace-normal">
               Export-ready sourcing • Amazon-first B2C • B2B partnerships
             </div>
 
