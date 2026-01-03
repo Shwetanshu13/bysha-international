@@ -20,6 +20,10 @@ export const metadata = {
   },
   description:
     "Bysha Internationals is a global trading and sourcing partner for Amazon-ready B2C products and export-focused B2B bulk supply.",
+  icons: {
+    icon: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
   metadataBase: new URL("https://example.com"),
   openGraph: {
     title: "Bysha Internationals",
