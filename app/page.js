@@ -3,17 +3,17 @@ import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
-    <div className="space-y-14">
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/70 p-6 shadow-sm sm:p-8">
+    <div className="space-y-10 sm:space-y-14">
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/70 p-5 shadow-sm sm:p-8">
         <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-emerald-200/40 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-28 -left-24 h-64 w-64 rounded-full bg-sky-200/35 blur-3xl" />
-        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-2">
-          <div className="space-y-6">
+        <div className="relative z-10 grid items-center gap-8 sm:gap-10 lg:grid-cols-2">
+          <div className="space-y-5 sm:space-y-6">
             <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-emerald-200/70 bg-emerald-50 px-3 py-1 text-xs font-medium leading-5 text-emerald-800 whitespace-normal">
               Export-ready sourcing • Amazon-first B2C • B2B partnerships
             </div>
 
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+            <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">
               <span className="bg-gradient-to-r from-slate-900 via-emerald-700 to-sky-700 bg-clip-text text-transparent">
                 Bysha Internationals
               </span>
@@ -34,47 +34,20 @@ export default function Home() {
                 href="https://www.amazon.in/s?k=Bysha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
+                className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700 sm:w-auto"
               >
                 View Products on Amazon
               </a>
               <Link
                 href="/contact"
-                className="inline-flex h-11 items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
+                className="inline-flex h-11 w-full items-center justify-center rounded-lg border border-sky-200 bg-white px-5 text-sm font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50 sm:w-auto"
               >
                 B2B Inquiries
               </Link>
             </div>
-
-            <div className="grid gap-4 sm:grid-cols-3">
-              <div className="rounded-xl border border-emerald-200/60 bg-emerald-50/60 p-4">
-                <div className="text-sm font-semibold text-slate-900">
-                  Global presence
-                </div>
-                <div className="mt-1 text-sm text-slate-600">
-                  Marketplace-ready operations and export documentation support.
-                </div>
-              </div>
-              <div className="rounded-xl border border-sky-200/60 bg-sky-50/60 p-4">
-                <div className="text-sm font-semibold text-slate-900">
-                  Amazon marketplaces
-                </div>
-                <div className="mt-1 text-sm text-slate-600">
-                  B2C purchases are fulfilled via Amazon for speed and trust.
-                </div>
-              </div>
-              <div className="rounded-xl border border-indigo-200/60 bg-indigo-50/60 p-4">
-                <div className="text-sm font-semibold text-slate-900">
-                  B2B partnerships
-                </div>
-                <div className="mt-1 text-sm text-slate-600">
-                  Bulk supply, sourcing, and long-term distribution.
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white/80 p-3 shadow-sm sm:p-4">
             <Carousel
               slides={[
                 {
@@ -100,6 +73,33 @@ export default function Home() {
                 },
               ]}
             />
+          </div>
+        </div>
+
+        <div className="relative z-10 mt-8 grid gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-4">
+          <div className="rounded-xl border border-emerald-200/60 bg-emerald-50/60 p-3 sm:p-4">
+            <div className="text-sm font-semibold text-slate-900">
+              Global presence
+            </div>
+            <div className="mt-1 text-sm text-slate-600">
+              Marketplace-ready operations and export documentation support.
+            </div>
+          </div>
+          <div className="rounded-xl border border-sky-200/60 bg-sky-50/60 p-3 sm:p-4">
+            <div className="text-sm font-semibold text-slate-900">
+              Amazon marketplaces
+            </div>
+            <div className="mt-1 text-sm text-slate-600">
+              B2C purchases are fulfilled via Amazon for speed and trust.
+            </div>
+          </div>
+          <div className="rounded-xl border border-indigo-200/60 bg-indigo-50/60 p-3 sm:p-4">
+            <div className="text-sm font-semibold text-slate-900">
+              B2B partnerships
+            </div>
+            <div className="mt-1 text-sm text-slate-600">
+              Bulk supply, sourcing, and long-term distribution.
+            </div>
           </div>
         </div>
       </section>

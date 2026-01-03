@@ -45,7 +45,7 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
                 {safeSlides.map((slide, idx) => (
                     <div
                         key={`${slide.title}-${idx}`}
-                        className="w-full shrink-0 p-6 sm:p-8"
+                        className="w-full shrink-0 p-5 sm:p-8"
                         aria-hidden={idx !== activeIndex}
                     >
                         <div className="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center">
@@ -63,7 +63,7 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
                             </div>
 
                             <div className="rounded-xl border border-slate-200 bg-white/70 p-4">
-                                <div className="relative aspect-[4/3] w-full">
+                                <div className="relative aspect-[16/10] w-full sm:aspect-[4/3]">
                                     <Image
                                         src={slide.imageSrc}
                                         alt={slide.title}
