@@ -10,14 +10,14 @@ export default function Footer() {
                         <span className="relative inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-emerald-200/70">
                             <Image
                                 src="/logo.jpeg"
-                                alt="Bysha Internationals logo"
+                                alt="Bysha International logo"
                                 fill
                                 sizes="40px"
                                 className="object-contain p-1"
                             />
                         </span>
                         <div className="text-sm font-semibold text-slate-900">
-                            Bysha Internationals
+                            Bysha International
                         </div>
                     </div>
                     <p className="text-sm leading-6 text-slate-600">
@@ -60,7 +60,7 @@ export default function Footer() {
             <div className="border-t border-slate-200">
                 <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
                     <div>
-                        © {new Date().getFullYear()} Bysha Internationals. All rights reserved.
+                        © {new Date().getFullYear()} Bysha International. All rights reserved.
                     </div>
                     <div>
                         <a

@@ -4,7 +4,7 @@ import { b2cProducts } from "../../lib/b2cProducts";
 export const metadata = {
     title: "B2C Products",
     description:
-        "Explore featured B2C products from Bysha Internationals. All purchases are completed and fulfilled via Amazon marketplaces.",
+        "Explore featured B2C products from Bysha International. All purchases are completed and fulfilled via Amazon marketplaces.",
 };
 
 export default function B2CProductsPage() {

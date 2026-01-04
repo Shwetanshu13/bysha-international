@@ -15,18 +15,18 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Bysha Internationals",
-    template: "%s | Bysha Internationals",
+    default: "Bysha International",
+    template: "%s | Bysha International",
   },
   description:
-    "Bysha Internationals is a global trading and sourcing partner for Amazon-ready B2C products and export-focused B2B bulk supply.",
+    "Bysha International is a global trading and sourcing partner for Amazon-ready B2C products and export-focused B2B bulk supply.",
   icons: {
     icon: "/logo.jpeg",
     apple: "/logo.jpeg",
   },
   metadataBase: new URL("https://example.com"),
   openGraph: {
-    title: "Bysha Internationals",
+    title: "Bysha International",
     description:
       "Global Trade. Quality Products. Trusted Partnerships.",
     type: "website",

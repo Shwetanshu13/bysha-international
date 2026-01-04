@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
-export default function Carousel({ slides, intervalMs = 5200 }) {
+export default function Carousel({ slides, intervalMs = 5200, className = "" }) {
     const safeSlides = useMemo(() => (Array.isArray(slides) ? slides : []), [slides]);
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -34,44 +35,66 @@ export default function Carousel({ slides, intervalMs = 5200 }) {
 
     return (
         <div
-            className="relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50"
+            className={`relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 ${className}`.trim()}
             aria-roledescription="carousel"
             aria-label="Featured highlights"
         >
+            <div className="pointer-events-none absolute -left-10 top-0 h-40 w-40 rounded-full bg-emerald-200/30 blur-3xl" />
+            <div className="pointer-events-none absolute -right-6 bottom-4 h-32 w-32 rounded-full bg-sky-200/40 blur-3xl" />
+
             <div
                 className="flex transition-transform duration-700 ease-in-out"
+                aria-live="polite"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
                 {safeSlides.map((slide, idx) => (
                     <div
                         key={`${slide.title}-${idx}`}
-                        className="w-full shrink-0 p-5 sm:p-8"
+                        className={`w-full shrink-0 p-6 sm:p-10 transition-transform duration-500 ${idx === activeIndex ? "sm:scale-[1.01]" : "sm:scale-[0.99]"}`}
                         aria-hidden={idx !== activeIndex}
                     >
-                        <div className="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center">
-                            <div className="space-y-3">
+                        <div className="grid gap-6 sm:grid-cols-[1.05fr_0.95fr] sm:items-center">
+                            <div className="space-y-3 sm:space-y-4">
                                 <div
                                     className={`text-xs font-semibold uppercase tracking-wide ${accentByIndex[idx % accentByIndex.length]
                                         }`}
                                 >
                                     {slide.eyebrow}
                                 </div>
-                                <div className="text-2xl font-semibold tracking-tight text-slate-900">
+                                <div className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
                                     {slide.title}
                                 </div>
                                 <p className="text-sm leading-6 text-slate-600">{slide.subtitle}</p>
+
+                                <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:pt-1">
+                                    <a
+                                        href="https://www.amazon.in/s?k=Bysha"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 text-xs font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
+                                    >
+                                        View Products
+                                    </a>
+                                    <Link
+                                        href="/contact"
+                                        className="inline-flex h-10 items-center justify-center rounded-lg border border-sky-200 bg-white px-4 text-xs font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
+                                    >
+                                        Talk to Us
+                                    </Link>
+                                </div>
                             </div>
 
-                            <div className="rounded-xl border border-slate-200 bg-white/70 p-4">
-                                <div className="relative aspect-[16/10] w-full sm:aspect-[4/3]">
+                            <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-md ring-1 ring-slate-100">
+                                <div className="relative aspect-[4/3] w-full sm:aspect-[4/3] overflow-hidden rounded-xl">
                                     <Image
                                         src={slide.imageSrc}
                                         alt={slide.title}
                                         fill
                                         sizes="(min-width: 640px) 40vw, 100vw"
-                                        className="object-contain"
+                                        className="object-contain transition-transform duration-700 ease-out"
                                         priority={idx === 0}
                                     />
+                                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent" />
                                 </div>
                             </div>
                         </div>

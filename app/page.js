@@ -4,6 +4,51 @@ import Carousel from "../components/Carousel";
 export default function Home() {
   return (
     <div className="space-y-10 sm:space-y-14">
+      <section className="relative">
+        <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
+          <Carousel
+            className="rounded-none border-x-0"
+            slides={[
+              {
+                eyebrow: "Featured",
+                title: "Amazon-ready products",
+                subtitle:
+                  "Professional catalog presentation and customer-first quality standards.",
+                imageSrc: "https://m.media-amazon.com/images/I/8129M0CGLpL._SX679_.jpg",
+              },
+              {
+                eyebrow: "Reach",
+                title: "Worldwide marketplaces",
+                subtitle:
+                  "Built for international buyers, reviews, and reliable fulfillment.",
+                imageSrc: "/imgs/worldwide.jpg",
+              },
+              {
+                eyebrow: "Sourcing",
+                title: "Quality, compliance, consistency",
+                subtitle:
+                  "Supplier vetting, packaging control, and export-focused documentation.",
+                imageSrc: "/imgs/premium-makhana.webp",
+              },
+              {
+                eyebrow: "Catalog",
+                title: "Lifestyle-ready categories",
+                subtitle:
+                  "Practical, well-presented products with reliable quality and packaging.",
+                imageSrc: "/imgs/leather_bag.jpeg",
+              },
+              {
+                eyebrow: "Export",
+                title: "Ready for bulk supply",
+                subtitle:
+                  "Share your destination, quantity, and timeline — we’ll support the next steps.",
+                imageSrc: "/imgs/bulk-order.png",
+              },
+            ]}
+          />
+        </div>
+      </section>
+
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/70 p-5 shadow-sm sm:p-8">
         <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-emerald-200/40 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-28 -left-24 h-64 w-64 rounded-full bg-sky-200/35 blur-3xl" />
@@ -15,7 +60,7 @@ export default function Home() {
 
             <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">
               <span className="bg-gradient-to-r from-slate-900 via-emerald-700 to-sky-700 bg-clip-text text-transparent">
-                Bysha Internationals
+                Bysha International
               </span>
             </h1>
 
@@ -45,34 +90,6 @@ export default function Home() {
                 B2B Inquiries
               </Link>
             </div>
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 bg-white/80 p-3 shadow-sm sm:p-4">
-            <Carousel
-              slides={[
-                {
-                  eyebrow: "Featured",
-                  title: "Amazon-ready products",
-                  subtitle:
-                    "Professional catalog presentation and customer-first quality standards.",
-                  imageSrc: "https://m.media-amazon.com/images/I/8129M0CGLpL._SX679_.jpg",
-                },
-                {
-                  eyebrow: "Reach",
-                  title: "Worldwide marketplaces",
-                  subtitle:
-                    "Built for international buyers, reviews, and reliable fulfillment.",
-                  imageSrc: "/imgs/worldwide.jpg",
-                },
-                {
-                  eyebrow: "Sourcing",
-                  title: "Quality, compliance, consistency",
-                  subtitle:
-                    "Supplier vetting, packaging control, and export-focused documentation.",
-                  imageSrc: "/imgs/premium-makhana.webp",
-                },
-              ]}
-            />
           </div>
         </div>
 
@@ -107,7 +124,7 @@ export default function Home() {
       <section className="grid gap-8 rounded-2xl border border-slate-200 bg-white/80 p-8 shadow-sm lg:grid-cols-3">
         <div className="space-y-2 lg:col-span-1">
           <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-            About Bysha Internationals
+            About Bysha International
           </h2>
           <p className="text-sm leading-6 text-slate-600">
             We operate across two models: B2C sales through Amazon marketplaces

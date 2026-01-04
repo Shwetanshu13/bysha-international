@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
     title: "About Us",
     description:
-        "Learn about Bysha Internationals: our mission, quality approach, and long-term partnership focus across global trade.",
+        "Learn about Bysha International: our mission, quality approach, and long-term partnership focus across global trade.",
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
         <div className="space-y-12">
             <header className="space-y-3">
                 <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-                    About Bysha Internationals
+                    About Bysha International
                 </h1>
                 <p className="max-w-3xl text-sm leading-6 text-slate-600">
                     We are a brand-focused trading and sourcing company working across B2C

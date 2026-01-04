@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata = {
     title: "B2B Products",
     description:
-        "Bulk supply and partnership offerings from Bysha Internationals, including foxnuts (makhana) and hand-crafted leather bags.",
+        "Bulk supply and partnership offerings from Bysha International, including foxnuts (makhana) and hand-crafted leather bags.",
 };
 
 export default function B2BProductsPage() {
@@ -15,7 +15,7 @@ export default function B2BProductsPage() {
                     B2B Bulk Supply & Partnerships
                 </h1>
                 <p className="max-w-3xl text-sm leading-6 text-slate-600">
-                    Bysha Internationals supports wholesalers, importers, and brand owners
+                    Bysha International supports wholesalers, importers, and brand owners
                     with selected export-ready products. We emphasize sourcing discipline,
                     consistent quality, and packaging that works for international
                     distribution.

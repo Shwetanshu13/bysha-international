@@ -16,7 +16,7 @@ export default function Navbar() {
                     <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-emerald-200/70">
                         <Image
                             src="/logo.jpeg"
-                            alt="Bysha Internationals logo"
+                            alt="Bysha International logo"
                             fill
                             sizes="36px"
                             className="object-contain p-1"
@@ -25,7 +25,7 @@ export default function Navbar() {
                     </span>
                     <div className="leading-tight">
                         <div className="text-sm font-semibold text-slate-900">
-                            Bysha Internationals
+                            Bysha International
                         </div>
                         <div className="text-xs text-slate-600">
                             Global Trade • B2C on Amazon • B2B Supply

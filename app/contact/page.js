@@ -1,7 +1,7 @@
 export const metadata = {
     title: "Contact",
     description:
-        "Contact Bysha Internationals via email or WhatsApp for product, bulk order, and partnership inquiries.",
+        "Contact Bysha International via email or WhatsApp for product, bulk order, and partnership inquiries.",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
             <section className="rounded-2xl border border-slate-200 bg-white/80 p-7 shadow-sm">
                 <div className="space-y-4">
                     <p className="max-w-3xl text-sm leading-6 text-slate-600">
-                        Thank you for reaching out to Bysha Internationals — we’re happy
+                        Thank you for reaching out to Bysha International — we’re happy
                         to hear from you. Whether you have a quick question or a detailed
                         requirement, just share what you need (quantity, destination,
                         and timeline) and we’ll get back to you with the right next steps.
