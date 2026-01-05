@@ -35,7 +35,7 @@ export default function Carousel({ slides, intervalMs = 5200, className = "" }) 
 
     return (
         <div
-            className={`relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 ${className}`.trim()}
+            className={`relative overflow-hidden rounded-xl border border-slate-200 bg-linear-to-br from-emerald-50 via-white to-sky-50 ${className}`.trim()}
             aria-roledescription="carousel"
             aria-label="Featured highlights"
         >
@@ -50,51 +50,51 @@ export default function Carousel({ slides, intervalMs = 5200, className = "" }) 
                 {safeSlides.map((slide, idx) => (
                     <div
                         key={`${slide.title}-${idx}`}
-                        className={`w-full shrink-0 p-6 sm:p-10 transition-transform duration-500 ${idx === activeIndex ? "sm:scale-[1.01]" : "sm:scale-[0.99]"}`}
+                        className={`w-full shrink-0 p-4 sm:p-6 transition-transform duration-500 ${idx === activeIndex ? "sm:scale-[1.01]" : "sm:scale-[0.99]"}`}
                         aria-hidden={idx !== activeIndex}
                     >
-                        <div className="grid gap-6 sm:grid-cols-[1.05fr_0.95fr] sm:items-center">
-                            <div className="space-y-3 sm:space-y-4">
+                        <div className="grid gap-2 sm:gap-2.5 sm:grid-cols-[0.9fr_1.1fr] sm:items-center">
+                            <div className="space-y-2.5 sm:space-y-2.5">
                                 <div
-                                    className={`text-xs font-semibold uppercase tracking-wide ${accentByIndex[idx % accentByIndex.length]
+                                    className={`text-sm font-semibold uppercase tracking-wide ${accentByIndex[idx % accentByIndex.length]
                                         }`}
                                 >
                                     {slide.eyebrow}
                                 </div>
-                                <div className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+                                <div className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
                                     {slide.title}
                                 </div>
-                                <p className="text-sm leading-6 text-slate-600">{slide.subtitle}</p>
+                                <p className="text-lg leading-7 text-slate-700 sm:text-lg sm:leading-7">{slide.subtitle}</p>
 
-                                <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:pt-1">
+                                <div className="flex flex-col gap-2.5 pt-1.5 sm:flex-row sm:pt-1">
                                     <a
                                         href="https://www.amazon.in/s?k=Bysha"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 text-xs font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
+                                        className="inline-flex h-12 items-center justify-center rounded-lg bg-linear-to-r from-emerald-600 to-teal-600 px-6 text-base font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700"
                                     >
                                         View Products
                                     </a>
                                     <Link
                                         href="/contact"
-                                        className="inline-flex h-10 items-center justify-center rounded-lg border border-sky-200 bg-white px-4 text-xs font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
+                                        className="inline-flex h-12 items-center justify-center rounded-lg border border-sky-200 bg-white px-6 text-base font-semibold text-slate-900 shadow-sm transition-colors hover:bg-sky-50"
                                     >
                                         Talk to Us
                                     </Link>
                                 </div>
                             </div>
 
-                            <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-md ring-1 ring-slate-100">
-                                <div className="relative aspect-[4/3] w-full sm:aspect-[4/3] overflow-hidden rounded-xl">
+                            <div className="rounded-2xl border border-slate-200 bg-white/80 p-3 sm:p-4 shadow-md ring-1 ring-slate-100">
+                                <div className="relative aspect-2/1 w-full overflow-hidden rounded-xl">
                                     <Image
                                         src={slide.imageSrc}
                                         alt={slide.title}
                                         fill
-                                        sizes="(min-width: 640px) 40vw, 100vw"
+                                        sizes="(min-width: 1024px) 45vw, (min-width: 640px) 60vw, 100vw"
                                         className="object-contain transition-transform duration-700 ease-out"
                                         priority={idx === 0}
                                     />
-                                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent" />
+                                    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-900/5 via-transparent to-transparent" />
                                 </div>
                             </div>
                         </div>
