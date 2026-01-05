@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">
-              <span className="bg-gradient-to-r from-slate-900 via-emerald-700 to-sky-700 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-slate-900 via-emerald-700 to-sky-700 bg-clip-text text-transparent">
                 Bysha International
               </span>
             </h1>
@@ -79,7 +79,7 @@ export default function Home() {
                 href="https://www.amazon.in/s?k=Bysha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700 sm:w-auto"
+                className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-linear-to-r from-emerald-600 to-teal-600 px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:from-emerald-700 hover:to-teal-700 sm:w-auto"
               >
                 View Products on Amazon
               </a>
